@@ -41,8 +41,8 @@ virt-install \
   --noautoconsole \
   --network network=fuel-pxe,model=$net_driver \
   --network network=$external_network,model=$net_driver \
-  --graphics vnc,listen=0.0.0.0
-#  --cpu host \
+  --graphics vnc,listen=0.0.0.0 \
+  --cpu host
 #If cpu parameter is set to "host" with QEMU 2.0 hypervisor
 #it causes critical failure during CentOS installation
 
